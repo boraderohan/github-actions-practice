@@ -17,4 +17,6 @@ jobs:
               run: ls -la
             - name: print OS
               run: echo "OS is ${{ runner.os }}"
-              
+            - name: intentional failure
+              run: exit 1
+                
